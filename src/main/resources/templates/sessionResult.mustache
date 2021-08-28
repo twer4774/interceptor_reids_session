@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title> 세션 유저 정보 확인 페이지 </title>
+</head>
+
+<body>
+{{#userData}}
+    userName : {{name}} <br>
+    userAge : {{age}}
+{{/userData}}
+
+<!-- userData가 없을 때 -->
+{{^userData}}
+    유저 정보가 없습니다.
+{{/userData}}
+
+</body>
+</html>
